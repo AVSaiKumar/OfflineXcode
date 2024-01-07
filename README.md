@@ -39,7 +39,7 @@ This iOS Xcode project demonstrates a secure method for conducting offline payme
     - Accessible only by the application that created the data.
     - Prevents unauthorized access to sensitive information.
 
-** Architecture Overview of Our Solution:**
+**Architecture Overview of Our Solution:**
     -<img src="archi.jpg" alt="Alt Text" width="500"/>
 
 1. **Data Storage:**
