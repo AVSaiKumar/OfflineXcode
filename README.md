@@ -7,17 +7,14 @@
 This iOS Xcode project demonstrates a secure method for conducting offline payment transactions between users. It utilizes encryption and Apple's Secure Enclave to protect sensitive data, enabling transactions even without a constant internet connection.
 
 **Key Features**
-
+* Freedom at your fingertips. Receive and spend money effortlessly, anytime, anywhere, with this revolutionary offline payment solution.
 * Offline transaction processing
 * Secure storage of balance and index data using the Secure Enclave
 * Encryption with elliptic curve keys
 * Digital signature verification
 * Offline balance download and verification
 * Offline balance transfer
-* Freedom at your fingertips. Receive and spend money effortlessly, anytime, anywhere, with this revolutionary offline payment solution.
 
-** Architecture **
- **Here's the explanation, incorporating definitions of Secure Enclave and Keychain:**
 
 **Understanding Secure Enclave and Keychain:**
 
