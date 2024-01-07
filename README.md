@@ -45,7 +45,7 @@ This iOS Xcode project demonstrates a secure method for conducting offline payme
    - **Sensitive application data, including balance, is encrypted and stored in the Keychain, a secure system for sensitive data.**
    - **The application's private key is stored in an even more secure location, the Secure Enclave, a hardware-based security component.**
 2. **Transaction Initiation:**
-   - User requests a transaction through the application.
+   - User requests a transaction through the application INC is receiving and DEC is for sending.
 3. **Secure Enclave Access:**
    - Application sends a request to the Secure Enclave for sensitive operations.
 4. **Processing and Verification (within Secure Enclave):**
@@ -173,7 +173,7 @@ Key Points:
    - Offline-to-offline transfers enable secure transactions without internet connectivity.
    - Precise index matching and signature verification ensure transaction integrity and prevent replay attacks.
    - The Secure Enclave safeguards sensitive data and processes transactions securely.
-
+   - Similarly the receiver  can then choose to spend it immediately to other person or transfer it to their bank when online.
 
 **Additional Information**
 
@@ -223,6 +223,6 @@ Key Points:
  - **Replay attack status shown for user 2 debug console they are a.index mismatch b.Signature verification failed**
   - <img src="status-user-2-false.png" alt="Alt Text"/>
  
-
+Similarly, User 2 also can send the currency to User 1 or others or to his online wallet when he connect back to online.
 
 **For further assistance or inquiries, please refer to the project's GitHub repository or contact the developer.**
