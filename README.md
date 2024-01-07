@@ -14,6 +14,7 @@ This iOS Xcode project demonstrates a secure method for conducting offline payme
 * Digital signature verification
 * Offline balance download and verification
 * Offline balance transfer
+* Freedom at your fingertips. Receive and spend money effortlessly, anytime, anywhere, with this revolutionary offline payment solution.
 
 ** Architecture **
  **Here's the explanation, incorporating definitions of Secure Enclave and Keychain:**
