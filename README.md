@@ -35,15 +35,15 @@ This iOS Xcode project demonstrates a secure method for conducting offline payme
 
 The user interface displays key information about your wallet and transactions:
 
-**- Public Key:** This is your wallet's unique identifier, used for secure transactions.
-**- Balance:** This reflects your current available funds, updating as you send and receive payments.
-**- OnIndex (Online Index):** This number increases each time you successfully add a token from the central server. It helps prevent replay attacks, ensuring transactions aren't duplicated.
-**- OffIndex (Offline Index):** This number increases when you send tokens to others or receive and verify tokens offline. It similarly protects against replay attacks during offline transactions.
+- Public Key: This is your wallet's unique identifier, used for secure transactions.
+- Balance: This reflects your current available funds, updating as you send and receive payments.
+- OnIndex (Online Index): This number increases each time you successfully add a token from the central server. It helps prevent replay attacks, ensuring transactions aren't duplicated.
+- OffIndex (Offline Index): This number increases when you send tokens to others or receive and verify tokens offline. It similarly protects against replay attacks during offline transactions.
 
-**Key Points:**
+Key Points:
 
-- Both OnIndex and OffIndex play crucial roles in transaction security.
-- Their increments safeguard against unauthorized transaction duplication.
+   - Both OnIndex and OffIndex play crucial roles in transaction security.
+   - Their increments safeguard against unauthorized transaction duplication.
 
 
 **Key Functionalities**
