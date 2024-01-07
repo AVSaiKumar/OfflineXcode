@@ -15,6 +15,64 @@ This iOS Xcode project demonstrates a secure method for conducting offline payme
 * Offline balance download and verification
 * Offline balance transfer
 
+** Architecture **
+ **Here's the explanation, incorporating definitions of Secure Enclave and Keychain:**
+
+**Understanding Secure Enclave and Keychain:**
+
+**Secure Enclave:**
+
+- A dedicated hardware component within Apple devices that offers a secure environment for sensitive data and operations.
+- Key features:
+    - Isolated from the main operating system and applications.
+    - Stores sensitive data like private keys in encrypted form.
+    - Processes sensitive operations within its secure boundaries.
+    - Has its own processor for enhanced security and performance.
+    - Communicates with other components through secure channels.
+
+**Keychain:**
+
+- A secure storage system used for passwords, certificates, and other sensitive information.
+- Key features:
+    - Data is encrypted and protected by system-level security measures.
+    - Accessible only by the application that created the data.
+    - Prevents unauthorized access to sensitive information.
+
+** Our soltion Architecture Overview:**
+-<img src="archi.jpg" alt="Alt Text"/>
+
+1. **Data Storage:**
+   - **Sensitive application data, including balance, is encrypted and stored in the Keychain, a secure system for sensitive data.**
+   - **The application's private key is stored in an even more secure location, the Secure Enclave, a hardware-based security component.**
+2. **Transaction Initiation:**
+   - User requests a transaction through the application.
+3. **Secure Enclave Access:**
+   - Application sends a request to the Secure Enclave for sensitive operations.
+4. **Processing and Verification (within Secure Enclave):**
+   - Secure Enclave decrypts sensitive data from Keychain using the private key.
+   - Processes transactions securely within its isolated environment.
+   - Employs cryptographic techniques to protect against attacks.
+5. **Data Update and Storage:**
+   - Secure Enclave updates encrypted data in Keychain.
+6. **Transaction Completion:**
+   - Secure Enclave communicates results back to the application.
+
+**Key Security Features:**
+
+- Secure Enclave Isolation
+- Encrypted Data Storage
+- Secure Communication Channel
+- Dedicated Processor
+- Keychain Protection
+
+**Additional Notes:**
+
+- Real-world architecture might have variations.
+- This architecture provides robust security for offline transactions and sensitive data management.
+
+
+
+
 **Getting Started**
 
 1. **Clone the project:**
