@@ -56,7 +56,7 @@ Key Points:
 
  **Online Balance to Offline Balance:**
 
-- **(Optional) Create a new central bank key:**
+   - **(Optional) Create a new central bank key:**
    - Run `python3 generate_keys.py` to create new bank keys.
    - Replace the contents of `public_key.pem` in `ContentView.swift` in the variable "publicKeyString" with the newly generated public key.
 - **Generate a token:**
@@ -86,22 +86,37 @@ Key Points:
    - The use of indexes and signature verification strengthens the security of offline transactions.
 
 
-**Offline to Offline Balance Transfer:**
+ ** Offline to Offline Balance Transfer:**
 
-- Users send a specified balance to another user's public key with a requested index.
-- The sender generates a digital token containing the sender's public key, amount, and index using cryptographic signatures.
-- The receiver verifies the token against the sender's public key and increments the balance securely in the Secure Enclave.
+   - ** Initiate transfer:**
+     - **Sender:**
+      - Enter recipient's public key.
+      - Enter the amount to send.
+      - **Enter the exact Index value displayed on the receiver's UI.**
+      - Press "Send" button.
+    - **Token generation:**
+      - App securely creates a token containing the sender's public key, amount, index, and signature using the Secure Enclave.
+      - The signature is immediately displayed on the screen (copy from debug area if cursor interaction is difficult).
 
-**Usage Instructions**
+ - ** Receive and verify token:**
+   - **Receiver:**
+     - Paste the sender's signature into the signature field.
+     - Enter the same amount and index used by the sender.
+     - Enter the sender's public key.
+     - Press "Verify and Increment Counter" button.
+   - **Secure verification and update:**
+     -  The Secure Enclave verifies the signature using the sender's public key.
+     - If successful, the **balance and offIndex are securely incremented**.
 
-- **View current balance:** The current balance is displayed on the main screen.
-- **Send a payment:**
-   - Enter the amount to send.
-   - Enter the recipient's public key (copied from the debug area or generated using `generate_keys.py`).
-   - Tap the "Send" button.
-- **Receive a payment:**
-   - Enter the sender's signature, amount, and index.
-   - Tap the "Verify and Increment Counter" button.
+  -** Replay attack prevention (similar to Online Balance):**
+      - Index mismatch protection
+      - Signature verification
+
+-**Key takeaways:**
+   - Offline-to-offline transfers enable secure transactions without internet connectivity.
+   - Precise index matching and signature verification ensure transaction integrity and prevent replay attacks.
+   - The Secure Enclave safeguards sensitive data and processes transactions securely.
+
 
 **Additional Information**
 
