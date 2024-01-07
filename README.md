@@ -86,29 +86,28 @@ Key Points:
    - The use of indexes and signature verification strengthens the security of offline transactions.
 
 
- ** Offline to Offline Balance Transfer:**
-
-   - ** Initiate transfer:**
-     - **Sender:**
+** Offline to Offline Balance Transfer:**
+- ** Initiate transfer:**
+   - **Sender:**
       - Enter recipient's public key.
       - Enter the amount to send.
       - **Enter the exact Index value displayed on the receiver's UI.**
       - Press "Send" button.
-    - **Token generation:**
+   - **Token generation:**
       - App securely creates a token containing the sender's public key, amount, index, and signature using the Secure Enclave.
       - The signature is immediately displayed on the screen (copy from debug area if cursor interaction is difficult).
-
- - ** Receive and verify token:**
-   - **Receiver:**
-     - Paste the sender's signature into the signature field.
-     - Enter the same amount and index used by the sender.
-     - Enter the sender's public key.
-     - Press "Verify and Increment Counter" button.
-   - **Secure verification and update:**
-     -  The Secure Enclave verifies the signature using the sender's public key.
+   
+   - ** Receive and verify token:**
+      - **Receiver:**
+        - Paste the sender's signature into the signature field.
+        - Enter the same amount and index used by the sender.
+        - Enter the sender's public key.
+        - Press "Verify and Increment Counter" button.
+   - ** Secure verification and update:**
+     - The Secure Enclave verifies the signature using the sender's public key.
      - If successful, the **balance and offIndex are securely incremented**.
 
-  -** Replay attack prevention (similar to Online Balance):**
+   - ** Replay attack prevention (similar to Online Balance):**
       - Index mismatch protection
       - Signature verification
 
