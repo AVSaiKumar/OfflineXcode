@@ -78,7 +78,7 @@ Key Points:
   - **Index mismatch protection:**
      - The app prevents duplicate transactions using the same token. If you attempt to add the same token again, it will fail with an "index mismatch" status, indicating that the index value has already been used.
    - **Signature verification:**
-   - If you try to modify the index value to a higher one for the same token, it will result in a signature error. This is because the signature was generated specifically for the original index value, ensuring the integrity of transactions.
+      - If you try to modify the index value to a higher one for the same token, it will result in a signature error. This is because the signature was generated specifically for the original index value, ensuring the integrity of transactions.
 
 - **Key takeaways:**
 
