@@ -131,14 +131,22 @@ Key Points:
    - Signature verification prevents unauthorized balance modifications.
 
 **snpas**
-- **user 1 home screen -
+- Lets see all the actions of screenshots
+- user-1 intial data Balance 966, OffIndex 9, onIndex 2
+- user-2 inital data Balance 160, Offindex 6, onIndex 1
+   
+- **1.user 1 home screen status
  - <img src="ss1-intro.png" alt="Alt Text" width="400"/>
-- **CentralServer**
+ 
+ - **user 1 debug console publicKey**
+ - <img src="user-pk-console.png" alt="Alt Text">
+ 
+- **2. CentralServer creates token for user 1 with the details as amount 250, index 3**
  - <img src="Central-server-sign.png" alt="Alt Text" width="400"/>
-- **user 1 debug console publicKey**
- - <img src="user-pk-console.png" alt="Alt Text" width="400"/>
-- **Balance Reflectance**
+
+- **Balance Reflectance on user1 on adding token**
  - <img src="user-1-balance-increment.png" alt="Alt Text" width="400"/>
+ 
 - **fraud status**
  - <img src="user-1-status-false.png" alt="Alt Text" width="400"/>
 
