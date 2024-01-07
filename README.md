@@ -122,14 +122,8 @@ Key Points:
 - **Key management:**
    - The application generates a private key during its first run and stores it securely in the Secure Enclave.
    - The public key is displayed in the user interface and used in transactions.
-- **Debugging and key management:**
-   - Copy the public key from the debug area in Xcode.
-   - Optional bank keys are provided (`private_key.pem` and `public_key.pem`).
-   - Generate new keys using `python3 generate_keys.py`.
-   - paste this 
-   - Create a token for the user on the Benhlaf central bank using `python3 sign.py`.
 - **Signature generation and verification:**
-   - The project includes Python scripts for signature creation and verification (`signature_script.py`).
+   - The project includes Python scripts for signature creation and verification (`sign.py`).
    - Ensure you have the required Python package: `pip install cryptography`
 - **Security considerations:**
    - Private keys are securely stored in the Secure Enclave.
