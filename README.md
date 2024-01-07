@@ -142,24 +142,28 @@ Key Points:
  - <img src="user-pk-console.png" alt="Alt Text">
  
 - **2. CentralServer creates token for user 1 with the details as amount 250, index 3**
- - <img src="Central-server-sign.png" alt="Alt Text" width="400"/>
+ - <img src="Central-server-sign.png" alt="Alt Text"/>
 
 - **Balance Reflectance on user1 on adding token**
  - <img src="user-1-balance-increment.png" alt="Alt Text" width="400"/>
  
-- **fraud status**
- - <img src="user-1-status-false.png" alt="Alt Text" width="400"/>
+- **Replay attack status shown debug console**
+ - <img src="user-1-status-false.png" alt="Alt Text"/>
 
 - **User 2 Home Screen**
  - <img src="user-2-home.png" alt="Alt Text" width="400"/>
-- **User 1 and 2 Home screen sending**
+ 
+- **User 1 trying to send $216 to user 2 for index 6**
  - <img src="user-1-2-home-offline-send.png" alt="Alt Text" width="400"/>
- - ** User 1 signature **
-  - <img src="user-1-signature.png" alt="Alt Text" width="400"/>
- - ** user 2 increment status **
+ 
+ - **User 1 signature on his debug console**
+  - <img src="user-1-signature.png" alt="Alt Text"/>
+  
+ - **user 2 claiming token from user 1**
   - <img src="user-1-2-receiving-home.png" alt="Alt Text" width="400"/>
- - ** user 2 fasle status console **
-  - <img src="status-user-2-false.png" alt="Alt Text" width="400"/>
+  
+ - **Replay attack status shown for user 2 in debug console **
+  - <img src="status-user-2-false.png" alt="Alt Text"/>
  
 
 
