@@ -31,9 +31,10 @@ This iOS Xcode project demonstrates a secure method for conducting offline payme
 
    - Click the "Run" button to launch the simulator.
 
-<img src="ss1-intro.png" alt="Alt Text" width="400"/>
 
-**4. Understanding the UI Screen**
+**4. Understanding the UI Screen** <img src="ss1-intro.png" alt="Alt Text" width="400"/>
+
+
 
 The user interface displays key information about your wallet and transactions:
 
