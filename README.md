@@ -147,7 +147,7 @@ Key Points:
 - **Balance Reflectance on user1 on adding token**
  - <img src="user-1-balance-increment.png" alt="Alt Text" width="400"/>
  
-- **Replay attack status shown debug console**
+- **Replay attack status shown for user 1 in debug console they are a.index mismatch b.Signature verification failed**
  - <img src="user-1-status-false.png" alt="Alt Text"/>
 
 - **User 2 Home Screen**
@@ -162,7 +162,7 @@ Key Points:
  - **user 2 claiming token from user 1**
   - <img src="user-1-2-receiving-home.png" alt="Alt Text" width="400"/>
   
- - **Replay attack status shown for user 2 in debug console **
+ - **Replay attack status shown for user 2 debug console they are a.index mismatch b.Signature verification failed**
   - <img src="status-user-2-false.png" alt="Alt Text"/>
  
 
