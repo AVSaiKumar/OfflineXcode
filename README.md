@@ -31,7 +31,7 @@ This iOS Xcode project demonstrates a secure method for conducting offline payme
 
    - Click the "Run" button to launch the simulator.
 
-<img src="ss1-intro.png" alt="Alt Text" width="200"/>
+<img src="ss1-intro.png" alt="Alt Text" width="400"/>
 
 **4. Understanding the UI Screen**
 
