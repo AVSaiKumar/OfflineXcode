@@ -131,26 +131,26 @@ Key Points:
    - Signature verification prevents unauthorized balance modifications.
 
 **snpas**
--**user 1 home screen -
+- **user 1 home screen -
  - <img src="ss1-intro.png" alt="Alt Text" width="400"/>
--**CentralServer**
+- **CentralServer**
  - <img src="Central-server-sign.png" alt="Alt Text" width="400"/>
--**user 1 debug console publicKey**
+- **user 1 debug console publicKey**
  - <img src="user-pk-console.png" alt="Alt Text" width="400"/>
--**Balance Reflectance**
+- **Balance Reflectance**
  - <img src="user-1-balance-increment.png" alt="Alt Text" width="400"/>
--**fraud status**
+- **fraud status**
  - <img src="user-1-status-false.png" alt="Alt Text" width="400"/>
 
--**User 2 Home Screen**
+- **User 2 Home Screen**
  - <img src="user-2-home.png" alt="Alt Text" width="400"/>
--**User 1 and 2 Home screen sending**
+- **User 1 and 2 Home screen sending**
  - <img src="user-1-2-home-offline-send.png" alt="Alt Text" width="400"/>
- -** User 1 signature **
+ - ** User 1 signature **
   - <img src="user-1-signature.png" alt="Alt Text" width="400"/>
- -** user 2 increment status **
+ - ** user 2 increment status **
   - <img src="user-1-2-receiving-home.png" alt="Alt Text" width="400"/>
- -** user 2 fasle status console **
+ - ** user 2 fasle status console **
   - <img src="status-user-2-false.png" alt="Alt Text" width="400"/>
  
 
