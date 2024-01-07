@@ -40,7 +40,7 @@ This iOS Xcode project demonstrates a secure method for conducting offline payme
     - Prevents unauthorized access to sensitive information.
 
 ** Our soltion Architecture Overview:**
--<img src="archi.jpg" alt="Alt Text"/>
+-<img src="archi.jpg" alt="Alt Text" width="500"/>
 
 1. **Data Storage:**
    - **Sensitive application data, including balance, is encrypted and stored in the Keychain, a secure system for sensitive data.**
