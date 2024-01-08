@@ -223,4 +223,6 @@ Key Points:
  
 Similarly, User 2 also can send the currency to User 1 or others or to his online wallet when he connect back to online.
 
+here is the the video demo link of FligthPay - https://youtu.be/2HTEZrO1AZQ?si=gSM011yq4qFjY8ob
+
 **For further assistance or inquiries, please refer to the project's GitHub repository or contact the developer.**
