@@ -1,6 +1,6 @@
- **Here's the complete README file, incorporating all information and addressing potential redundancies:**
+#SustPay
 
-# Offline Payment Transaction iOS App
+# An Offline Payment Transaction iOS App
 
 **Overview**
 
