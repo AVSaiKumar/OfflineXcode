@@ -1,4 +1,4 @@
-#SustPay
+# SustPay
 
 # An Offline Payment Transaction iOS App
 
@@ -232,7 +232,7 @@ here is the the video demo link of FligthPay - https://youtu.be/2HTEZrO1AZQ?si=g
 **NOte: Incase any issue in running the sign.py file to load balance from the bank, follow these steps: provide your public key, onIndex, present on Screen (initially '0'), and the desired amount. Email these details to ms2204101012@iiti.ac.in. We will manually generate a signature for you and email back to you. Afterwards, you can use this signature to load your balance.**
 
 
- **# Troubleshooting Project Issues**
+ # Troubleshooting Project Issues**
 
 **If you encounter difficulty running the project due to platform or build dependencies, please follow these steps:**
 
