@@ -9,10 +9,10 @@ enum EncryptionError: Error {
 }
 
 class SecureEnclaveManager: ObservableObject {
-    @Published var CurrentBalance: String = ""
-    @Published var onIndex: String = ""
+    @Published var CurrentBalance: String = "0"
+    @Published var onIndex: String = "0"
     @Published var publicKey: String = ""
-    @Published var offIndex: String = ""
+    @Published var offIndex: String = "0"
     @Published var Gsignature: String = ""
     var privateKey: SecKey?
 
@@ -771,20 +771,28 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("pk : \(enclaveManager.publicKey)")
+            Text("publicKey : \(enclaveManager.publicKey)")
+
+                        // ... rest of your view code
+
+            Button("Copy Public Key") {
+                UIPasteboard.general.string = enclaveManager.publicKey }
+            
+            
+            
             HStack{
-                Text("Updated Balance: \(enclaveManager.CurrentBalance)")
+                Text("Balance: \(enclaveManager.CurrentBalance)")
                 //Text("Current Balance: \(enclaveManager.decryptedMessage)")
                 
-                Text("off index : \(enclaveManager.offIndex)")
-                Text("on index : \(enclaveManager.onIndex)")
+                Text("offIndex : \(enclaveManager.offIndex)")
+                Text("onIndex : \(enclaveManager.onIndex)")
                 
             }
             TextField("Enter Signature", text: $signatureInput)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
-            TextField("Enter Balance", text: $dataInput)
+            TextField("Enter Amount", text: $dataInput)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
@@ -792,7 +800,7 @@ struct ContentView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
-            TextField("Enter receivers publick key", text: $rpk)
+            TextField("Enter receivers/senders publick key", text: $rpk)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
@@ -815,7 +823,11 @@ struct ContentView: View {
             }
             .padding()
             
+            //Text("Signature : \(enclaveManager.Gsignature)")
             Text("Signature : \(enclaveManager.Gsignature)")
+            
+            Button("Copy Signature") {
+                UIPasteboard.general.string = enclaveManager.Gsignature }
             
             
         }
@@ -873,4 +885,3 @@ extension Data {
         self = data
     }
 }
-
