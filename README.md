@@ -15,8 +15,7 @@ This iOS Xcode project demonstrates a secure method for conducting offline payme
 * Offline balance download and verification
 * Offline balance transfer
 
-Please note: To simplify the implementation, we have adopted a single-tier hierarchy allowing users to directly request funds from their online accounts managed by the central bank. In reality, a two-tier Central Bank Digital Currency (CBDC) architecture will be in place, requiring users to request their account balance from their intermediary bank.
-
+Please note: The main idea is that we're going to save some of our online money on our device when we have internet. Later, when there's no internet, we'll use the stored money on our device for transactions.We've simplified the process by allowing users to directly request funds from their online accounts managed by the central bank. Currently, we have a one-tier system, but in reality, a two-tier Central Bank Digital Currency (CBDC) architecture will be in place, requiring users to access their account through their intermediary bank. We haven't implemented the digital certificate assignment and verification features yet, as they involve attestation, a bit challenging process. We'll address this in future updates with support from the device, environment, and platforms like in our case Apple App Store.
 
 **Understanding Secure Enclave and Keychain:**
 
