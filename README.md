@@ -110,7 +110,7 @@ Key Points:
    - Their increments safeguard against unauthorized transaction duplication.
    - Copy public key from debug area: The public key will be printed in the debug area of Xcode. Copy it from there, as copying from the simulator can be difficult.
 
-Here is the the video demo link of FligthPay - https://youtu.be/2HTEZrO1AZQ?si=gSM011yq4qFjY8ob
+Here is the the video demo link of SustPay - https://youtu.be/2HTEZrO1AZQ?si=gSM011yq4qFjY8ob
 
 **Key Functionalities**
 
